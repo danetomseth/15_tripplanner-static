@@ -1,0 +1,23 @@
+<html>
+<head>
+  <script src="/jquery/dist/jquery.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+  <select>
+  {% for hotel in hotels %}
+    <option>{{ hotel.name }}</option>
+  {% endfor %}
+  </select>
+  <select>
+  {% for restaurant in restaurants %}
+    <option>{{ restaurant.name }}</option>
+  {% endfor %}
+  </select>
+  <select>
+  {% for activity in activities %}
+    <option>{{ activity.name }}</option>
+  {% endfor %}
+  </select>
+</body>
+</html>
