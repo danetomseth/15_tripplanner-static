@@ -15,7 +15,9 @@ router.get('/', function (req, res, next) {
     res.render('index', {
       hotels: allHotels,
       restaurants: allRestaurants,
-      activities: allActivities
+      activities: allActivities,
+      currentHotel: allHotels[0],
+      currentActivity: allActivities[0]
     });
   })
   .then(null, next);

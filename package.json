@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e html,js,css app",
-    "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
+  "build-css": "node-sass -w -r assets/stylesheets -o public/stylesheets",
+  "start": "npm run build-css & nodemon -e html,css,js app.js"
   },
   "keywords": [],
   "author": "",

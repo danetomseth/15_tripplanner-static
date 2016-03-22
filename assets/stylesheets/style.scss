@@ -1,5 +1,187 @@
 div {
-  span {
-    color: green;
-  }
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
 }
+
+body {
+	background-image: url(./images/new_year_background.png) !important;
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+
+.navbar-inverse {
+
+}
+
+.main-content {
+	width:90%;
+	margin: 0 auto;
+	background-color: #9ad3de;
+	box-shadow: 10px 10px 20px #c9c9c9;
+}
+
+.theme-dropdown .dropdown-menu {
+	position: static;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+	width: auto;
+}
+
+
+.container {
+}
+
+
+
+.first-row {
+	min-height: 300px;
+	padding: 0px 10px;
+	
+	
+	.select-content {
+		background-color: #e3e3e3;
+		border-radius: 5px;
+		height: 450px;
+		padding: 10px;
+	}
+	.select-title {
+		text-align: center;
+	}
+	
+
+}
+
+
+.activity-btn {
+		float: right;
+		height: auto;
+		width: 50%;
+	}
+
+.list-group {
+	height: 300px;
+	overflow: scroll;
+	padding: 5px;
+	.list-group-item { 
+		margin: 0 auto;
+		border-style: none; 
+
+	}
+
+	.btn-primary {
+		float: right;
+	}
+	.btn-primary:hover {
+
+	}
+	
+}
+
+.section {
+	margin: 10px 0px;
+
+}
+.section::before, .section::after {
+	clear:both;
+	display: block;
+	content: "";
+}
+
+.day-container {
+	margin: 0px 10px;
+	min-height: 400px;
+	padding: 10px 10px;
+	background-color: #c9c9c9;
+	border-radius: 5px;
+	h2 {
+		color: white;
+		display: inline-block;
+		float: left;
+		margin: 0;
+		padding: 0 10px;
+	}
+	h3 {
+		color: #89bdd3;
+		font-size: 2em;
+		padding: 5px;
+		margin: 0px;
+	}
+	.button-box {
+		float: left;
+		padding: 0 5px;
+
+	}
+	.day {
+		width: 100%;
+		height: 5%;
+		clear: both;
+		margin: 0 auto;
+	}
+	.col-md-4 {
+		height: auto;
+	}
+	hr {
+		margin: 2px auto;
+	}
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 20px;
+    background-color: #9ad3de;
+}
+.second-row {
+	
+	min-height: 300px;
+	padding:10px;
+	.select-content {
+	border-radius: 5px;
+	background-color: white;
+	padding: 10px;
+	height: 300px;
+	}
+	.btn-bottom {
+		position: relative;
+		bottom: 0px;
+
+	}
+	ul {
+		list-style: none;
+		padding: 10px;
+		li {
+			font-size: 1.25em;
+		}
+	}
+	ul.inactive {
+		display:none;
+	}
+
+}
+
+
+
+#map {
+	
+	height: 500px;
+	margin: 0 auto;
+}
+
+.map-wrapper {
+	padding: 10px 10px;
+}
+
