@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery Demo</title>
+  </head>
+  <body>
+    <h1 id="foo">Hello!</h1>
+    <ul>
+      <li>Foo</li>
+      <li>Bar</li>
+      <li>Baz</li>
+    </ul>
+    <input type="text" id="cool" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+      $('h1')
+      .on('click', function (evt) {
+        console.log(this);
+        $(this).fadeOut(1000);
+      })
+      .on('click', function (evt) {
+        $(this).css({color: 'blue'});
+      });
+
+      $('#cool').on('change', function (evt) {
+        console.log($(this).val());
+      });
+
+      $('li').on('click', function () {
+        console.log('Normal click handler', this);
+        // console.log('I am so happy that just happened!');
+      });
+
+      $('ul').on('click', 'li', function () {
+        console.log('Delegated click handler', this);
+        // console.log('I am so happy that just happened!');
+      });
+
+      $('ul').append('<li>Delta</li>');
+
+      $('li').each(function (idx, elem) {
+        $(elem).css({"font-size": idx * 20});
+      })
+
+    </script>
+  </body>
+</html>

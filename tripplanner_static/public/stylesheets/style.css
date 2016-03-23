@@ -22,10 +22,12 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0; }
 
+
 .theme-showcase .navbar .container {
   width: auto; }
 
 .first-row {
+	
   min-height: 300px;
   padding: 0px 10px; }
   .first-row .select-content {
